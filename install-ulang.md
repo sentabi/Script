@@ -5,5 +5,6 @@
 /var/www
 MySQL
 /home
+/etc/fstab
 ```
 
