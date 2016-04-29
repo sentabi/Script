@@ -1,10 +1,27 @@
 # INGET!!!
 
 ### - backup 
+
+#### /var/www
 ```
-/var/www
-MySQL
-/home
-/etc/fstab
+tar zcvf www.tar.gz /var/www
 ```
 
+#### MySQL
+```
+mysqldump --all-databases > mysql.sql
+```
+
+#### HOME
+```
+/home
+```
+#### fstab
+```
+scp /etc/fstab backup:/home/tmp
+```
+
+#### thunderbird
+```
+rsync -av ~/.thunderbird backup:/home/tmp/.thunderbird
+```
